@@ -21,3 +21,8 @@ Segue as instruções abaixo e descobre quantos ECTS te faltam para passares de 
 4. Corre o seguinte comando: 
   `python ano-curricular-ist.py`
 
+## Testing
+
+Para testar o programa, basta corrê-lo com o comando:
+`python -m unittest ano-curricular-ist.TesteCalculoAnoCurricular`
+
