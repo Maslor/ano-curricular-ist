@@ -1,9 +1,13 @@
 # ano-curricular-ist
-Qual é o meu ano curricular?
+**Qual é o meu ano curricular?**
+
+Se também tens esta dúvida, este repositório foi criado para ti. 
+
+Segue as instruções abaixo e descobre quantos ECTS te faltam para passares de ano curricular, além de confirmares o teu ano curricular atual.
 
 ## Fórmula Seguida
 
-![Formula](https://github.com/Maslor/ano-curricular-ist/blob/master/Screen%20Shot%202016-02-22%20at%2014.36.26.png)
+![Formula](https://github.com/Maslor/ano-curricular-ist/blob/master/Screenshot.png)
 *Fonte: [IST](http://academica.tecnico.ulisboa.pt/alunos/inscricao-no-semestre/)*
 
 ## Instruções
