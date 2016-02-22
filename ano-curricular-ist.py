@@ -30,6 +30,8 @@ def calculaAnoCurricularCorrente(creditosFeitos, nroAnosCurso):
 anosCurso = input('Quantos anos tem o curso? ')
 if anosCurso > 10:
 	raise ValueError("O curso nao pode ter mais de 10 anos.")
+if anosCurso < 1:
+	raise ValueError("O curso nao pode ter menos de 1 ano.")
 creditos = input('Quantos creditos tens aprovados? ')
 print ('O teu ano curricular -> ' + str(calculaAnoCurricularCorrente(creditos, anosCurso)))
 print ('Faltam-te ' + str(calculaCreditosNecessariosParaProximoAno(creditos, anosCurso)) + ' creditos para passar de ano.')
@@ -43,6 +45,12 @@ class TesteCalculoAnoCurricular(unittest.TestCase):
 		self.assertEqual(calculaAnoCurricularCorrente(36,3), 2)
 	def test3Ano(self):
 		self.assertEqual(calculaAnoCurricularCorrente(96,3), 3)
+	def testCreditosPara2Ano(self):
+		self.assertEqual(calculaCreditosNecessariosParaProximoAno(30,3), 6.0)
+	def testCreditosPara3Ano(self):
+		self.assertEqual(calculaCreditosNecessariosParaProximoAno(64,3), 32.0)
+	def testFinalista(self):
+		self.assertEqual(calculaCreditosNecessariosParaProximoAno(96,3), 0.0)
 
 if __name__ == '__main__':
     unittest.main()
